@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg');
+            /* Use a relevant background image */
+            background-size: cover;
+            color: #333;
+        }
+
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0044cc;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #0044cc;
+        }
+
+        .about,
+        .courses,
+        .contact {
+            margin: 20px 0;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0044cc;
+            color: white;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0044cc;
+            color: white;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>XYZ College of Engineering</h1>
+        <p>Empowering Future Engineers</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#courses">Courses</a>
+        <a href="#faculty">Faculty</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="content">
+        <section id="about" class="about">
+            <h2>About XYZ College</h2>
+            <p><strong>XYZ College</strong> was established in <em>2001</em> with a mission to provide quality education
+                in engineering. Our campus is spread over <b>50 acres</b> with state-of-the-art facilities.</p>
+            <img src="college_building.jpg" alt="College Building" width="100%" />
+        </section>
+
+        <section id="courses" class="courses">
+            <h2>Courses Offered</h2>
+            <ul>
+                <li>Bachelor of Technology in Computer Science</li>
+                <li>Bachelor of Technology in Mechanical Engineering</li>
+                <li>Bachelor of Technology in Electronics and Communication</li>
+                <li>Master of Technology in Civil Engineering</li>
+            </ul>
+        </section>
+
+        <section id="faculty" class="faculty">
+            <h2>Faculty Information</h2>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td>Dr. Alice Johnson</td>
+                        <td>Computer Science</td>
+                        <td><a href="mailto:alice.johnson@xyzcollege.edu">alice.johnson@xyzcollege.edu</a></td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Robert Brown</td>
+                        <td>Mechanical Engineering</td>
+                        <td><a href="mailto:robert.brown@xyzcollege.edu">robert.brown@xyzcollege.edu</a></td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Emma Wilson</td>
+                        <td>Electronics and Communication</td>
+                        <td><a href="mailto:emma.wilson@xyzcollege.edu">emma.wilson@xyzcollege.edu</a></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Address: 123 College Road, City, State, ZIP</p>
+            <p>Email: <a href="mailto:info@xyzcollege.edu">info@xyzcollege.edu</a></p>
+            <p>Phone: (123) 456-7890</p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 XYZ College of Engineering. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

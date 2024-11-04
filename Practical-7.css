@@ -1,0 +1,85 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.ads {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Ad Card Styling */
+.ad-card {
+  width: 80%;
+  padding: 20px;
+  background-color: white;
+  border-left: 5px solid #4caf50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* CSS3 Selectors */
+.ad-card[data-category="electronics"] {
+  border-left-color: #007bff;
+}
+
+.ad-card[data-category="fashion"] {
+  border-left-color: #ff69b4;
+}
+
+.ad-card[data-category="home"] {
+  border-left-color: #ff9800;
+}
+
+/* Pseudo-Classes */
+.ad-card:hover {
+  background-color: #e0f7fa;
+  transform: translateY(-5px);
+}
+
+.details-link {
+  text-decoration: none;
+  color: #4caf50;
+}
+
+.details-link:hover {
+  color: #388e3c;
+  text-decoration: underline;
+}
+
+/* Pseudo-Elements */
+.ad-card h2::after {
+  content: " - Sponsored";
+  color: #888;
+  font-size: 0.9em;
+}
+
+/* CTA Button Styling */
+.cta {
+  font-weight: bold;
+  color: #ff5722;
+  cursor: pointer;
+}
+
+.cta:hover {
+  color: #d84315;
+}

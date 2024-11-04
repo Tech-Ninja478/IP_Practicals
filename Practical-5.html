@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="Practical-5.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f8;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .item-list {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .category-list {
+            list-style-type: square;
+            padding: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header with Inline CSS -->
+    <div class="header" style="background-color: #333; color: #fff; font-size: 1.2em;">
+        Inventory Management System
+    </div>
+
+    <!-- Content Section -->
+    <section class="content">
+        <h1>Current Inventory</h1>
+
+        <!-- Table for Inventory List -->
+        <div class="item-list">
+            <h2>Product Table</h2>
+            <table>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Apples</td>
+                    <td>Fruits</td>
+                    <td>100</td>
+                    <td>$1.50</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Bread</td>
+                    <td>Bakery</td>
+                    <td>50</td>
+                    <td>$2.00</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Milk</td>
+                    <td>Dairy</td>
+                    <td>200</td>
+                    <td>$1.20</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </table>
+        </div>
+
+        <!-- Category List -->
+        <div class="item-list">
+            <h2>Product Categories</h2>
+            <ul class="category-list">
+                <li>Fruits</li>
+                <li>Vegetables</li>
+                <li>Bakery</li>
+                <li>Dairy</li>
+                <li>Snacks</li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+
+</html>

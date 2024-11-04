@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <link rel="stylesheet" href="Practical-4.css">
+</head>
+
+<body>
+
+    <!-- Header with Logo -->
+    <header>
+        <img src="college_logo.jpg" alt="College Logo" class="logo">
+        <h1>Class Timetable</h1>
+    </header>
+
+    <!-- Navigation Links -->
+    <nav>
+        <ul>
+            <li><a href="#timetable">Timetable</a></li>
+            <li><a href="#subjects">Subjects</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#feedback">Feedback Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Timetable Section with Table -->
+    <section id="timetable">
+        <h2>Weekly Timetable</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>9:00 - 10:00</th>
+                <th>10:00 - 11:00</th>
+                <th>11:00 - 12:00</th>
+                <th>1:00 - 2:00</th>
+                <th>2:00 - 3:00</th>
+                <th>3:00 - 4:00</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Math</td>
+                <td>Physics</td>
+                <td>Chemistry</td>
+                <td>Lunch</td>
+                <td>Biology</td>
+                <td>Computer Science</td>
+            </tr>
+            <!-- Additional rows for other days... -->
+        </table>
+    </section>
+
+    <!-- Subjects List -->
+    <section id="subjects">
+        <h2>Subjects Offered</h2>
+        <ul>
+            <li>Mathematics</li>
+            <li>Physics</li>
+            <li>Chemistry</li>
+            <li>Biology</li>
+            <li>Computer Science</li>
+            <li>Physical Education</li>
+        </ul>
+    </section>
+
+    <!-- Frames for Multimedia Resources -->
+    <section id="resources">
+        <h2>Video Lecture Resources</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Lecture Video"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+
+    <!-- Feedback Form -->
+    <section id="feedback">
+        <h2>Feedback Form</h2>
+        <form action="submit_feedback.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <label for="rating">Rate our Timetable:</label>
+            <select id="rating" name="rating">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+
+</html>

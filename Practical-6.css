@@ -1,0 +1,114 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.banner-management,
+.analytics {
+  margin: 20px auto;
+  width: 80%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Banner Management Styles */
+.banner-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.banner-item {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-left: 5px solid #4caf50;
+  position: relative;
+}
+
+/* CSS3 Selectors */
+.banner-item[data-id="002"] {
+  border-left: 5px solid #ff9800;
+}
+
+.banner-item[data-id="003"] {
+  border-left: 5px solid #e91e63;
+}
+
+/* Pseudo-Classes */
+.banner-item:hover {
+  background-color: #e0f7fa;
+}
+
+.edit-link {
+  text-decoration: none;
+  color: #4caf50;
+}
+
+.edit-link:hover {
+  color: #388e3c;
+  text-decoration: underline;
+}
+
+/* Pseudo-Elements */
+.banner-item h3::after {
+  content: " | Banner";
+  color: #888;
+  font-size: 0.9em;
+}
+
+/* CTA Button Styling */
+.cta {
+  font-weight: bold;
+  color: #ff5722;
+  cursor: pointer;
+}
+
+.cta:hover {
+  color: #d84315;
+}
+
+/* Analytics Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Table Row Highlight */
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #e0f7fa;
+}

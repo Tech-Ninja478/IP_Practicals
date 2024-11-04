@@ -1,0 +1,32 @@
+/* External CSS File: styles.css */
+
+/* Body Styling */
+body {
+  color: #333;
+}
+
+/* Styling for Header */
+.header {
+  font-size: 1.2em;
+  background-color: #4caf50;
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+
+/* Content Section Styling */
+.content {
+  padding: 20px;
+}
+
+/* Item List Styling */
+.item-list h2 {
+  color: #2c3e50;
+  font-size: 1.8em;
+  margin-top: 10px;
+}
+
+.category-list li {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
